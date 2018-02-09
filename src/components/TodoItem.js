@@ -61,7 +61,8 @@ class TodoItem extends Component {
           <input
             type="checkbox"
             className="toggle"
-            onClick={onToggleTodo}
+            onChange={onToggleTodo}
+            checked={completed}
           />
           <label
             onDoubleClick={this.handleLabelClick}
